@@ -18,6 +18,13 @@
   background-color: #25c24f;
   padding: 1.25rem 2.25rem;
   margin-top: 25px;
+  -webkit-transition: background-color 0.5s, border 0.5s;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.button:hover {
+  background-color: #181818;
+  border: 1px solid #181818;
 }
 
 .spanGreenColor {
@@ -75,5 +82,39 @@ html {
 .header__paragraphSubItem {
   margin: 20px 0px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__subItemsBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header__subItemsElement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%;
+  }
+  .header__paragraphSubItem {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

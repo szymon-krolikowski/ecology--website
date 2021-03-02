@@ -291,6 +291,18 @@ html {
   .team__headingTwo {
     margin-top: 0px;
   }
+  .service__secoundArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service__firstImageBox, .service__secoundImageBox {
+    width: 48%;
+    height: 40vh;
+  }
 }
 
 @media screen and (min-width: 1000px) {

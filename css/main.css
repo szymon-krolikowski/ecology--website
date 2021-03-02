@@ -37,6 +37,10 @@
   color: #25c24f;
 }
 
+.spanFontWeight {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 760px) {
   .headingOne {
     font-size: 4rem;
@@ -162,6 +166,70 @@ html {
 
 .team__headingTwo {
   margin-top: 40px;
+}
+
+.service {
+  margin: 50px 20px;
+}
+
+.service__secoundArticle {
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.service__informationBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 30px 20px;
+  background-color: rgba(34, 34, 34, 0.9);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.service__firstImageBox {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  border-radius: 5px;
+  background-image: url("/image/panele-fotowoltaiczne.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.service__firstImageBox:hover .service__informationBox {
+  opacity: 1;
+}
+
+.service__secoundImageBox {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  border-radius: 5px;
+  background-image: url("/image/turbiny-wiatrowe.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.service__secoundImageBox:hover .service__informationBox {
+  opacity: 1;
+}
+
+.service__unorderList {
+  margin: 20px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.service__listElement {
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.service__headingTwo {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 760px) {

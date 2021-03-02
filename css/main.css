@@ -43,7 +43,6 @@
   }
   .headingTwo {
     font-size: 3rem;
-    color: #222222;
   }
   .paragraph {
     font-size: 1.75rem;
@@ -56,6 +55,9 @@
 @media screen and (min-width: 1000px) {
   .headingOne {
     font-size: 5.6rem;
+  }
+  .headingTwo {
+    font-size: 3.8rem;
   }
   .paragraph {
     font-size: 1.85rem;
@@ -210,6 +212,14 @@ html {
   .team__secoundArticle {
     width: 50%;
   }
+  .team__partnersBox {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .team__imageLogoBrand {
+    margin: 0px 50px 0px 0px;
+  }
   .team__headingTwo {
     margin-top: 0px;
   }
@@ -217,8 +227,9 @@ html {
 
 @media screen and (min-width: 1000px) {
   .header {
+    width: 90vw;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 100px auto;
   }
   .header__firstArticle {
     width: 40%;
@@ -251,6 +262,40 @@ html {
   .header__paragraphSubItem {
     font-size: 1.7rem;
     margin-top: 10px;
+  }
+  .team {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
+  }
+  .team__firstArticle {
+    position: relative;
+    width: 50%;
+    padding-right: 0px;
+  }
+  .team__secoundArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 50px;
+  }
+  .team__firstArticle::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(37, 194, 79, 0.1);
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -133,7 +133,33 @@ html
         height: 30vh
         border-radius: 5px
 
-    
+.features
+    margin: 50px 20px
+
+    &__secoundArticle
+        margin-top: 50px
+
+    &__box
+        text-align: center
+        margin: 40px 0px
+
+    &__dots
+        font-size: 50px
+        color: $green
+
+    &__headingTwo
+        position: relative
+        margin-bottom: 40px
+
+    &__headingTwo::before
+        position: absolute
+        content: ". . . . ."
+        top: 90%
+        color: $green
+        font-size: 40px
+
+    &__headingThree
+        margin: 10px 0px
 
 
 @import "./_medium"

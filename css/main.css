@@ -11,6 +11,11 @@
   color: #222222;
 }
 
+.headingThree {
+  font-size: 1.85rem;
+  color: #222222;
+}
+
 .paragraph {
   font-size: 1.7rem;
 }
@@ -240,6 +245,41 @@ html {
   width: 100%;
   height: 30vh;
   border-radius: 5px;
+}
+
+.features {
+  margin: 50px 20px;
+}
+
+.features__secoundArticle {
+  margin-top: 50px;
+}
+
+.features__box {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.features__dots {
+  font-size: 50px;
+  color: #25c24f;
+}
+
+.features__headingTwo {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.features__headingTwo::before {
+  position: absolute;
+  content: ". . . . .";
+  top: 90%;
+  color: #25c24f;
+  font-size: 40px;
+}
+
+.features__headingThree {
+  margin: 10px 0px;
 }
 
 @media screen and (min-width: 760px) {

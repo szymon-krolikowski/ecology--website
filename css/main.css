@@ -277,8 +277,8 @@ html {
   position: absolute;
   content: ". . . . .";
   top: 90%;
-  color: #25c24f;
   font-size: 40px;
+  color: #25c24f;
 }
 
 .features__headingThree {
@@ -489,6 +489,35 @@ html {
   }
   .video__iframe {
     height: 50vh;
+  }
+  .features {
+    width: 90vw;
+    max-width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 100px auto;
+  }
+  .features__firstArticle {
+    width: 40%;
+    padding-right: 50px;
+  }
+  .features__secoundArticle {
+    width: 60%;
+    margin-top: 0px;
+    padding-left: 100px;
+  }
+  .features__box {
+    margin: 0px 0px 20px;
+    width: 50%;
+    height: 50%;
+  }
+  .features__headingTwo::before {
+    position: absolute;
+    content: ". . . . .";
+    top: 90%;
+    font-size: 40px;
+    color: #25c24f;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,7 +9,6 @@
 .headingTwo {
   font-size: 2.9rem;
   color: #222222;
-  margin: 40px 0px;
 }
 
 .paragraph {
@@ -41,6 +40,10 @@
 @media screen and (min-width: 760px) {
   .headingOne {
     font-size: 4rem;
+  }
+  .headingTwo {
+    font-size: 3rem;
+    color: #222222;
   }
   .paragraph {
     font-size: 1.75rem;
@@ -155,6 +158,10 @@ html {
   margin: 20px 0px;
 }
 
+.team__headingTwo {
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 760px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -186,6 +193,25 @@ html {
   .header__paragraphSubItem {
     margin: 0px 10px 0px 0px;
     font-size: 1.4rem;
+  }
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team__firstArticle {
+    width: 50%;
+    padding-right: 30px;
+  }
+  .team__secoundArticle {
+    width: 50%;
+  }
+  .team__headingTwo {
+    margin-top: 0px;
   }
 }
 

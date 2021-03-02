@@ -6,6 +6,12 @@
   margin: 10px 0px 20px;
 }
 
+.headingTwo {
+  font-size: 2.9rem;
+  color: #222222;
+  margin: 40px 0px;
+}
+
 .paragraph {
   font-size: 1.7rem;
 }
@@ -79,7 +85,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 20px;
+  margin: 50px 20px;
 }
 
 .header__firstArticle, .header__secoundArticle {
@@ -111,6 +117,42 @@ html {
 
 .header__paragraphNumber {
   font-weight: 600;
+}
+
+.team {
+  margin: 50px 20px;
+}
+
+.team__firstArticle, .team__SecoundArticle {
+  width: 100%;
+}
+
+.team__image {
+  width: 100%;
+}
+
+.team__partnersBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px 0px 0px 0px;
+}
+
+.team__unorderList {
+  margin: 20px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.team__listElement {
+  font-weight: 600;
+  margin: 20px 0px;
 }
 
 @media screen and (min-width: 760px) {

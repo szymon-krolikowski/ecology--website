@@ -55,11 +55,25 @@ html {
   width: 100%;
 }
 
+.header__subItemsBox {
+  margin-top: 20px;
+}
+
 .header__image {
   width: 100%;
 }
 
 .header__paragraphTop {
   color: #9c9c9c;
+}
+
+.header__paragraphNumber {
+  color: #25c24f;
+  font-weight: bold;
+}
+
+.header__paragraphSubItem {
+  margin: 20px 0px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

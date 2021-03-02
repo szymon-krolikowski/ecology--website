@@ -377,5 +377,38 @@ html {
     background-color: rgba(37, 194, 79, 0.1);
     z-index: -1;
   }
+  .service {
+    width: 90vw;
+    max-width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 100px auto;
+  }
+  .service__firstArticle {
+    width: 40%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 5rem;
+  }
+  .service__secoundArticle {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+  }
+  .service__firstImageBox, .service__secoundImageBox {
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

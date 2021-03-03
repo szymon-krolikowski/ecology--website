@@ -205,6 +205,65 @@ html
     &__headingTwo
         margin-bottom: 40px
 
+.testimonials
+    margin: 50px 20px
+
+    &__wrapper
+        overflow: hidden
+
+    &__secoundArticle
+        width: 100vw
+        display: flex
+        flex-wrap: nowrap
+
+    &__box
+        width: 85%
+        min-width: 85%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        flex-shrink: 0
+        text-align: center
+        border-radius: 5px
+        padding: 50px 20px 20px 20px
+        margin-right: 2%
+        margin-left: 2%
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+
+    &__slider
+        display: flex
+        padding: 0rem 20px 50px
+        overflow-x: auto
+        scroll-behavior: smooth
+        scroll-snap-type: mandatory
+        scroll-snap-points-x: repeat(300px)
+        -webkit-overflow-scrolling: touch
+
+    &__iconBox
+        display: flex
+        width: 10%
+        color: $green
+
+    &__textBox
+        width: 90%
+        color: $gray
+
+    &__headingTwo
+        margin-bottom: 40px
+
+    &__paragraphIcon
+        font-size: 5rem
+
+    &__paragraphName
+        font-weight: 600
+        margin: 10px 0px 5px
+        color: black
+
+    &__paragraph
+        font-size: 1.4rem
+
 
 @import "./_medium"
 @import "./_large"

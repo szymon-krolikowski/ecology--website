@@ -174,8 +174,36 @@ html
     &__headingTwo
         margin-bottom: 40px
 
+.gallery
+    margin: 50px 20px
 
+    &__secoundArticle
+        display: grid
+        grid-template-columns: repeat(10, 1fr)
+        grid-row-gap: 20px
+        grid-column-gap: 20px
+        
+    &__bigBox
+        grid-column: 1 / 11
+        
+    &__smallBox--1
+        grid-column: 1 / 6
 
+    &__smallBox--2
+        grid-column: 6 / 11
+
+    &__smallBox--3
+        grid-column: 1 / 6
+
+    &__smallBox--4
+        grid-column: 6 / 11
+
+    &__image
+        width: 100%
+        border-radius: 10px
+
+    &__headingTwo
+        margin-bottom: 40px
 
 
 @import "./_medium"

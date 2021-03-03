@@ -302,6 +302,58 @@ html {
   margin-bottom: 40px;
 }
 
+.gallery {
+  margin: 50px 20px;
+}
+
+.gallery__secoundArticle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.gallery__bigBox {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1 / 11;
+}
+
+.gallery__smallBox--1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+.gallery__smallBox--2 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / 11;
+}
+
+.gallery__smallBox--3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+.gallery__smallBox--4 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / 11;
+}
+
+.gallery__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery__headingTwo {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 760px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -402,6 +454,45 @@ html {
   }
   .featuresSecound__headingTwo {
     margin-bottom: 20px;
+  }
+  .gallery__secoundArticle {
+    -ms-grid-columns: (1fr)[11];
+        grid-template-columns: repeat(11, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+  }
+  .gallery__bigBox {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+  .gallery__smallBox--1 {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 3;
+    grid-column: 6 / 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .gallery__smallBox--2 {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-column: 9 / 12;
+  }
+  .gallery__smallBox--3 {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 3;
+    grid-column: 6 / 9;
+  }
+  .gallery__smallBox--4 {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-column: 9 / 12;
   }
 }
 
@@ -577,6 +668,11 @@ html {
   }
   .featuresSecound__image {
     width: 70%;
+  }
+  .gallery {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

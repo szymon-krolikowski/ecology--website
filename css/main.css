@@ -570,6 +570,84 @@ html {
   font-size: 30px;
 }
 
+.contact {
+  background-image: url("/image/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__input {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #9c9c9c;
+  padding: 10px 20px;
+  -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+          box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+  margin: 40px 0px 20px;
+  width: 70vw;
+}
+
+.contact__button {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #25c24f;
+  padding: 10px 20px;
+  -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+          box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+  width: 70vw;
+  background-color: #25c24f;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.contact__headingTwo {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.footer {
+  padding: 50px 20px;
+  background-color: #3D3D3D;
+  color: white;
+}
+
+.footer__secoundArticle {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer__box {
+  margin: 20px 0px;
+}
+
+.footer__paragraphMain {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.footer__paragraph {
+  margin: 10px 10px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 760px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -764,6 +842,40 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact {
+    height: 40vh;
+  }
+  .contact__button {
+    width: 40vw;
+  }
+  .footer {
+    padding: 50px 20px 5px;
+    background-color: #3D3D3D;
+    color: white;
+  }
+  .footer__firstArticle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__secoundArticle {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer__box {
+    margin: 0px 10px;
+    width: 25%;
+  }
+  .footer__paragraphMain {
+    margin: 0px 0px;
+    font-weight: bold;
+  }
+  .footer__paragraph {
+    margin: 10px 00px;
+    font-size: 1.6rem;
+    font-weight: 300;
   }
 }
 
@@ -973,6 +1085,18 @@ html {
   }
   .blog__controls {
     padding-left: 5%;
+  }
+  .contact__input {
+    padding: 20px 30px;
+    width: 30vw;
+  }
+  .contact__button {
+    padding: 20px 30px;
+    width: 30vw;
+  }
+  .footer__firstArticle {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -199,4 +199,18 @@ html {
     width: 50%;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .formContact {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
+  }
+  .formContact__firstArticle {
+    padding-right: 80px;
+  }
+  .formContact__form {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

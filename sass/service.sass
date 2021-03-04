@@ -122,5 +122,46 @@ html
     &__span
         padding-right: 10px
 
+.contact
+    background-image: url("/image/contact-bg.png")
+    background-position: center
+    background-size: cover
+    height: 50vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
+
+    &__input
+        position: relative
+        border-radius: 20px
+        border: 1px solid $gray
+        padding: 10px 20px
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+        margin: 40px 0px 20px
+        width: 70vw
+    
+    &__button
+        position: relative
+        border-radius: 20px
+        border: 1px solid $green
+        padding: 10px 20px
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+        width: 70vw
+        background-color: $green
+        color: $white
+        font-weight: bold
+        font-size: 1.8rem
+        transition: background-color 0.5s, border 0.5s
+
+        &:hover
+            background-color: $black
+            border: 1px solid $black
+
+    &__headingTwo
+        margin: 0px 20px
+        text-align: center
+
 @import "./_serviceMedium"
 @import "./_serviceLarge"

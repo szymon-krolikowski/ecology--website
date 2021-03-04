@@ -14,6 +14,7 @@ html
     scroll-behavior: smooth
     font-family: 'Quicksand', sans-serif
 
+
 .header
     display: flex
     flex-direction: column
@@ -26,6 +27,7 @@ html
 
     &__subItemsBox
         margin-top: 20px
+        margin-left: 20px
 
     &__image
         width: 100%
@@ -61,16 +63,39 @@ html
         justify-content: space-around
         margin: 40px 0px 0px 0px
 
-    &__unorderList
-        margin: 20px 0px 0px 0px
-        list-style-type: none
+    &__accordion
+        font-size: 1.8rem
 
-    &__listElement
-        font-weight: 600
+    &__contentBox
+        position: relative
         margin: 20px 0px
+
+    &__contentBoxHeader
+        position: relative
+        padding: 10px 0px
+        cursor: pointer
+        font-weight: 600
+        transition: 0.5 $green
+
+        &:hover
+            color: $green
+
+    &__answerBox
+        position: relative
+        height: 0
+        overflow: hidden
+        transition: 0.5s
+        overflow-y: hidden
+
+    &__contentBox.teamActiveBox .team__answerBox
+        height: 120px
+        padding: 10px 0px 10px 30px
 
     &__headingTwo
         margin-top: 40px
+
+    &__span
+        padding-right: 10px
 
 .service
     margin: 50px 20px
@@ -125,6 +150,17 @@ html
     &__headingTwo
         margin-bottom: 20px
 
+    &__spanGreenColor
+        padding-right: 10px
+
+    &__link
+        color: $white
+        text-decoration: none
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
 .video
     margin: 50px 20px
 
@@ -160,6 +196,18 @@ html
 
     &__headingThree
         margin: 10px 0px
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
+    &__link
+        color: $white
+        text-decoration: none
+        transition: color 0.5s
+
+        &:hover
+            color: $green
 
 .featuresSecound
     margin: 50px 20px
@@ -294,6 +342,10 @@ html
 
     &__headingThree
         margin: 20px 0px
+        transition: color 0.5s
+
+        &:hover
+            color: $green
 
     &__paragraph
         color: $white
@@ -331,7 +383,8 @@ html
 
     &__image
         width: 100%
-        border-radius: 10px
+        border-radius: 5px
+        cursor: pointer
 
     &__nextButton,
     &__prevButton 
@@ -340,12 +393,20 @@ html
         border-radius: 50%
         cursor: pointer
         outline: none
+        transition: border 0.3s, color 0.3s
+
+        &:hover
+            border: 1px solid $green
+            color: $green
 
     &__prevButton
         margin-right: 20px
 
     &__icon
         font-size: 30px
+
+    &__link
+        text-decoration: none
 
 .contact
     background-image: url("/image/contact-bg.png")
@@ -378,6 +439,11 @@ html
         color: $white
         font-weight: bold
         font-size: 1.8rem
+        transition: background-color 0.5s, border 0.5s
+
+        &:hover
+            background-color: $black
+            border: 1px solid $black
 
     &__headingTwo
         margin: 0px 20px

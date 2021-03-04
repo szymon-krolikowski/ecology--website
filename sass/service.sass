@@ -78,5 +78,49 @@ html
     &__headingTwo
         margin: 20px 0px
 
+.team
+    margin: 50px 20px
+
+    &__firstArticle,
+    &__SecoundArticle
+        width: 100%
+
+    &__image
+        width: 100%
+
+    &__accordion
+        font-size: 1.8rem
+
+    &__contentBox
+        position: relative
+        margin: 20px 0px
+
+    &__contentBoxHeader
+        position: relative
+        padding: 10px 0px
+        cursor: pointer
+        font-weight: 600
+        transition: 0.5 $green
+
+        &:hover
+            color: $green
+
+    &__answerBox
+        position: relative
+        height: 0
+        overflow: hidden
+        transition: 0.5s
+        overflow-y: hidden
+
+    &__contentBox.teamActiveBox .team__answerBox
+        height: 120px
+        padding: 10px 0px 10px 30px
+
+    &__headingTwo
+        margin-top: 40px
+
+    &__span
+        padding-right: 10px
+
 @import "./_serviceMedium"
 @import "./_serviceLarge"

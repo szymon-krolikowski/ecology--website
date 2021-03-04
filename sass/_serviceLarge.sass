@@ -14,3 +14,33 @@
 
         &__progressBarSection--first
             margin-top: 40px
+
+    .team
+        width: 90vw
+        max-width: 1300px
+        margin: 100px auto
+
+        &__firstArticle
+            position: relative
+            width: 50% 
+            padding-right: 0px
+
+        &__secoundArticle
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding-left: 50px
+
+        &__firstArticle::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 80%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+        &__contentBox.teamActiveBox .team__answerBox
+            height: 78px

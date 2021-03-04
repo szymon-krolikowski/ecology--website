@@ -176,6 +176,63 @@ html {
   margin: 20px 0px;
 }
 
+.statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0px;
+  background-color: rgba(37, 194, 79, 0.1);
+}
+
+.statistic__box--one {
+  position: relative;
+  margin: 20px;
+}
+
+.statistic__box--one::after {
+  position: absolute;
+  content: "01";
+  font-size: 10rem;
+  font-weight: bold;
+  top: -50%;
+  left: -5%;
+  color: rgba(156, 156, 156, 0.2);
+}
+
+.statistic__box--two {
+  position: relative;
+  margin: 40px 20px;
+}
+
+.statistic__box--two::after {
+  position: absolute;
+  content: "02";
+  font-size: 10rem;
+  font-weight: bold;
+  top: -50%;
+  left: -5%;
+  color: rgba(156, 156, 156, 0.2);
+}
+
+.statistic__box--three {
+  position: relative;
+  margin: 20px;
+}
+
+.statistic__box--three::after {
+  position: absolute;
+  content: "03";
+  font-size: 10rem;
+  font-weight: bold;
+  top: -50%;
+  left: -5%;
+  color: rgba(156, 156, 156, 0.2);
+}
+
 .team {
   margin: 50px 20px;
 }
@@ -429,6 +486,40 @@ html {
   }
   .header__progressBarSection--first {
     margin-top: 40px;
+  }
+  .statistic {
+    margin: 100px 0px;
+    padding: 100px 0px;
+  }
+  .statistic__firstArticle {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .statistic__box {
+    width: 30%;
+  }
+  .statistic__box--one {
+    margin: 0;
+  }
+  .statistic__box--two {
+    margin: 0;
+  }
+  .statistic__box--three {
+    margin: 0;
   }
   .team {
     width: 90vw;

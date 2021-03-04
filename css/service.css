@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.headingOne {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: #222222;
+  margin: 10px 0px 20px;
+}
+
+.headingTwo {
+  font-size: 2.9rem;
+  color: #222222;
+}
+
+.headingThree {
+  font-size: 1.85rem;
+  color: #222222;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+}
+
+.button {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #25c24f;
+  background-color: #25c24f;
+  padding: 1.25rem 2.25rem;
+  margin-top: 25px;
+  -webkit-transition: background-color 0.5s, border 0.5s;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.button:hover {
+  background-color: #222222;
+  border: 1px solid #222222;
+}
+
+.spanGreenColor {
+  color: #25c24f;
+}
+
+.spanFontWeight {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 760px) {
+  .headingOne {
+    font-size: 4rem;
+  }
+  .headingTwo {
+    font-size: 3rem;
+  }
+  .headingThree {
+    font-size: 1.95rem;
+  }
+  .paragraph {
+    font-size: 1.75rem;
+  }
+  .button {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .headingOne {
+    font-size: 5.6rem;
+  }
+  .headingTwo {
+    font-size: 3.8rem;
+  }
+  .paragraph {
+    font-size: 1.85rem;
+  }
+  .button {
+    font-size: 1.85rem;
+  }
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 20px;
+}
+
+.header__image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.header__progressBarSection {
+  margin: 20px 0px;
+}
+
+.header__progressBarText {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__progressBar {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(156, 156, 156, 0.4);
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.header__progressBar--first::after {
+  width: 95%;
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 0px;
+  height: 6px;
+  background-color: #25c24f;
+  border-radius: 50px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.header__progressBar--secound::after {
+  width: 90%;
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 0px;
+  height: 6px;
+  background-color: #25c24f;
+  border-radius: 50px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.header__progressBar--third::after {
+  width: 100%;
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 0px;
+  height: 6px;
+  background-color: #25c24f;
+  border-radius: 50px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.header__headingTwo {
+  margin: 20px 0px;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .header__firstArticle {
+    width: 50%;
+    padding-right: 2.5rem;
+  }
+  .header__secoundArticle {
+    width: 50%;
+    padding-left: 2.5rem;
+  }
+  .header__headingTwo {
+    margin: 0px 0px 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
+  }
+  .header__firstArticle {
+    width: 55%;
+    padding-right: 2.5rem;
+  }
+  .header__secoundArticle {
+    width: 45%;
+    padding-left: 2.5rem;
+  }
+  .header__progressBarSection--first {
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=service.css.map */

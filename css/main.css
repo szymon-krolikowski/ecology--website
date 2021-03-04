@@ -112,6 +112,7 @@ html {
 
 .header__subItemsBox {
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .header__image {
@@ -174,6 +175,10 @@ html {
 
 .team__headingTwo {
   margin-top: 40px;
+}
+
+.team__spanGreenColor {
+  padding-right: 10px;
 }
 
 .service {
@@ -240,6 +245,21 @@ html {
   margin-bottom: 20px;
 }
 
+.service__spanGreenColor {
+  padding-right: 10px;
+}
+
+.service__link {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.service__link:hover {
+  color: #25c24f;
+}
+
 .video {
   margin: 50px 20px;
 }
@@ -283,6 +303,23 @@ html {
 
 .features__headingThree {
   margin: 10px 0px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.features__headingThree:hover {
+  color: #25c24f;
+}
+
+.features__link {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.features__link:hover {
+  color: #25c24f;
 }
 
 .featuresSecound {
@@ -488,6 +525,12 @@ html {
 
 .blog__headingThree {
   margin: 20px 0px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.blog__headingThree:hover {
+  color: #25c24f;
 }
 
 .blog__paragraph {
@@ -551,7 +594,8 @@ html {
 
 .blog__image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .blog__nextButton, .blog__prevButton {
@@ -560,6 +604,13 @@ html {
   border-radius: 50%;
   cursor: pointer;
   outline: none;
+  -webkit-transition: border 0.3s, color 0.3s;
+  transition: border 0.3s, color 0.3s;
+}
+
+.blog__nextButton:hover, .blog__prevButton:hover {
+  border: 1px solid #25c24f;
+  color: #25c24f;
 }
 
 .blog__prevButton {
@@ -568,6 +619,10 @@ html {
 
 .blog__icon {
   font-size: 30px;
+}
+
+.blog__link {
+  text-decoration: none;
 }
 
 .contact {
@@ -615,6 +670,13 @@ html {
   color: white;
   font-weight: bold;
   font-size: 1.8rem;
+  -webkit-transition: background-color 0.5s, border 0.5s;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.contact__button:hover {
+  background-color: #222222;
+  border: 1px solid #222222;
 }
 
 .contact__headingTwo {

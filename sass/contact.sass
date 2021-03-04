@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import "./_topography"
+
+*,
+::after,
+::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+    font-family: 'Quicksand', sans-serif
+
+.formContact
+    display: flex
+    flex-direction: column
+    margin: 50px 0px
+
+    &__firstArticle
+        margin: 50px 20px
+
+    &__dataContactBox
+        display: flex
+        margin: 20px 0px
+
+    &__secoundArticle
+        width: 100vw
+        padding: 50px 20px
+        background-color: rgba(37, 194, 79, 0.1)
+
+    &__form
+        width: 90%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        font-weight: 300
+        margin: 0 auto
+
+    &__input
+        width: 100%
+        font-size: 1.5rem
+        font-weight: 300
+        border: none
+        border-bottom: 1px solid $gray
+        background-color: transparent
+        padding: 5px 0px
+        margin: 20px auto
+
+    &__input::-webkit-input-placeholder,
+    &__input::placeholder
+        font-family: 'Quicksand', sans-serif
+        font-weight: 400
+
+    &__paragraphMain
+        margin: 20px 0px 40px
+
+    &__paragraphData
+        text-align: center
+        line-height: 40px
+
+    &__icon
+        padding-right: 20px
+    
+
+@import "./_contactMedium"
+@import "./_contactLarge"

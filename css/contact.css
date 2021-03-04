@@ -234,6 +234,32 @@ html {
   text-align: center;
 }
 
+.footer {
+  padding: 50px 20px;
+  background-color: #3D3D3D;
+  color: white;
+}
+
+.footer__secoundArticle {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer__box {
+  margin: 20px 0px;
+}
+
+.footer__paragraphMain {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.footer__paragraph {
+  margin: 10px 10px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 760px) {
   .formContact {
     -webkit-box-orient: horizontal;
@@ -263,6 +289,34 @@ html {
   .contact__button {
     width: 40vw;
   }
+  .footer {
+    padding: 50px 20px 5px;
+    background-color: #3D3D3D;
+    color: white;
+  }
+  .footer__firstArticle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__secoundArticle {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer__box {
+    margin: 0px 10px;
+    width: 25%;
+  }
+  .footer__paragraphMain {
+    margin: 0px 0px;
+    font-weight: bold;
+  }
+  .footer__paragraph {
+    margin: 10px 00px;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -284,6 +338,10 @@ html {
   .contact__button {
     padding: 20px 30px;
     width: 30vw;
+  }
+  .footer__firstArticle {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=contact.css.map */

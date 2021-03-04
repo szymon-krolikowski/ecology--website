@@ -163,21 +163,47 @@ html {
   margin: 40px 0px 0px 0px;
 }
 
-.team__unorderList {
-  margin: 20px 0px 0px 0px;
-  list-style-type: none;
+.team__accordion {
+  font-size: 1.8rem;
 }
 
-.team__listElement {
-  font-weight: 600;
+.team__contentBox {
+  position: relative;
   margin: 20px 0px;
+}
+
+.team__contentBoxHeader {
+  position: relative;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: 0.5 #25c24f;
+  transition: 0.5 #25c24f;
+}
+
+.team__contentBoxHeader:hover {
+  color: #25c24f;
+}
+
+.team__answerBox {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+
+.team__contentBox.teamActiveBox .team__answerBox {
+  height: 120px;
+  padding: 10px 0px 10px 30px;
 }
 
 .team__headingTwo {
   margin-top: 40px;
 }
 
-.team__spanGreenColor {
+.team__span {
   padding-right: 10px;
 }
 
@@ -766,6 +792,9 @@ html {
   .team__imageLogoBrand {
     margin: 0px 50px 0px 0px;
   }
+  .team__contentBox.teamActiveBox .team__answerBox {
+    height: 105px;
+  }
   .team__headingTwo {
     margin-top: 0px;
   }
@@ -1012,6 +1041,9 @@ html {
     height: 90%;
     background-color: rgba(37, 194, 79, 0.1);
     z-index: -1;
+  }
+  .team__contentBox.teamActiveBox .team__answerBox {
+    height: 78px;
   }
   .service {
     width: 90vw;

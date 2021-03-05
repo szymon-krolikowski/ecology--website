@@ -21,3 +21,20 @@ linksNavigationMobile.forEach(element => {
         navigationMobile.classList.remove("navigationMobileActive");
     });
 });
+
+
+const input = document.querySelector(".newsletter__input");
+input.addEventListener("input", e => {
+    const inputValue = input.value;
+    const regularExpression = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
+
+    if (!regularExpression.test(inputValue)) {
+        input.classList.add("field-error");
+        input.classList.remove("field-accept");
+    } else if(regularExpression.test(inputValue)) {
+        input.classList.add("field-accept");
+        input.classList.remove("field-error");
+    } else {
+        input.classList.add("field-error");
+    }
+});

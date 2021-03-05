@@ -22,7 +22,19 @@
             <a class="paragraph navigation__link" href="contact.html">Kontakt</a>
         </article>
     </nav>
-    <header class="header">
+    <nav class="navigationMobile">
+        <article class="navigationMobile__firstArticle">
+            <a class="paragraph navigationMobile__link" href="index.html">Home</a>
+            <a class="paragraph navigationMobile__link" href="#o-nas">O nas</a>
+            <a class="paragraph navigationMobile__link" href="service.html">Usługi</a>
+            <a class="paragraph navigationMobile__link" href="#projekty">Projekty</a>
+            <a class="paragraph navigationMobile__link" href="contact.html">Kontakt</a>
+        </article>
+    </nav>
+    <div class="navigationMobile__button">
+        <p>&#9758;</p>
+    </div>
+    <header id="home" class="header">
         <article class="header__firstArticle">
             <p class="paragraph header__paragraphTop">Uratuj planetę</p>
             <h1 class="headingOne">Pomóż nam <span class="spanGreenColor">ocalić ekologię</span> i przyszłość naszej
@@ -30,7 +42,7 @@
             <p class="paragraph header__paragraph">Pracujemy nad przyspieszeniem odkryć naukowych, <span
                     class="spanGreenColor">które poprawią nasze zrozumienie świata</span> i przyniosą korzyści ludziom i
                 naturze.</p>
-            <button class="button">Wesprzyj</button>
+            <button class="button" href="">Wesprzyj</button>
         </article>
         <article class="header__secoundArticle">
             <img class="header__image" src="image/lazurowe-jezioro-w-gorach.png" alt="Lazurowe jezioro w górach">
@@ -136,30 +148,30 @@
             <p class="paragraph">Każdego dnia dokładamy wszelkich starań, aby zbierać śmieci z ulic, recyklingować
                 materiały i propagować <span class="spanFontWeight">idee ekologii</span> i materiałów przyjaznych dla
                 środowiska.</p>
-            <button class="button">Dołącz teraz</button>
+                <a class="features__button button" href="contact.html">Dołącz teraz</a>
         </article>
         <article class="features__secoundArticle">
             <div class="features__box">
                 <img src="image/ikona-1.png" alt="Ikonka wolontariuszy">
-                <a class="features__link" href=""><h3 class="headingThree features__headingThree">Zostań wolontariuszem</h3></a>
+                <a class="features__link" href="contact.html"><h3 class="headingThree features__headingThree">Zostań wolontariuszem</h3></a>
                 <p class="paragraph">Jeśli jesteś osobą, która wspiera nasze pomysły i chcesz nam pomóc, to zapraszamy!
                 </p>
             </div>
             <div class="features__box">
                 <img src="image/ikona-2.png" alt="Ikonka eco serca">
-                <a class="features__link" href=""><h3 class="headingThree features__headingThree">Weź udział w wydarzeniu</h3></a>
+                <a class="features__link" href="contact.html"><h3 class="headingThree features__headingThree">Weź udział w wydarzeniu</h3></a>
                 <p class="paragraph">Każdy może wziąć udział w naszej akcji charytatywnej. Cenimy Twój wpływ na nasze
                     projekty i dziękujemy za pomoc.</p>
             </div>
             <div class="features__box">
                 <img src="image/ikona-3.png" alt="Ikonka wsparcia">
-                <a class="features__link" href=""><h3 class="headingThree features__headingThree">Wesprzyj kampanię</h3></a>
+                <a class="features__link" href="contact.html"><h3 class="headingThree features__headingThree">Wesprzyj kampanię</h3></a>
                 <p class="paragraph">Możesz wesprzeć każdą z naszych kampanii swoim osobistym udziałem lub jakąkolwiek
                     darowizną.</p>
             </div>
             <div class="features__box">
                 <img src="image/ikona-4.png" alt="Ikonka darowizny">
-                <a class="features__link" href=""><h3 class="headingThree features__headingThree">Ogólna darowizna</h3></a>
+                <a class="features__link" href="contact.html"><h3 class="headingThree features__headingThree">Ogólna darowizna</h3></a>
                 <p class="paragraph">Nasza organizacja poszerza idee ratowania ekologii świata i jest wdzięczna za każdą
                     niewielką darowiznę!</p>
             </div>
@@ -263,7 +275,7 @@
                         aby tworzyć lepszy świat</h2>
                     <p class="paragraph blog__paragraph">Jeśli podzielasz nasze pomysły i wartości, mamy nadzieję, że
                         dołączysz do nas!</p>
-                    <button class="button">Dołącz teraz</button>
+                    <button class="button"><a class="blog__link" href="contact.html">Dołącz teraz</a></button>
                 </div>
             </div>
         </article>
@@ -299,25 +311,25 @@
             </div>
         </article>
     </section>
+
     <section class="contact">
         <h2 class="headingTwo contact__headingTwo"> <span class="spanGreenColor">Dołącz</span> do newslettera</h2>
         <input class="contact__input" type="email" placeholder="Twój mail">
         <button class="contact__button">Dołącz</button>
     </section>
     
-    
     <footer class="footer">
         <article class="footer__firstArticle">
             <div class="footer__box">
-                <p class="paragraph spanFontWeight footer__paragraphMain">Green Circle</p>
+                <img src="/image/logo-white.png" alt="Logo Green Circle">
                 <p class="paragraph footer__paragraph">Nasz fundusz działa na rzecz ratowania przyrody i naszej planety dla przyszłych pokoleń oraz zmniejszenia szkodliwej działalności człowieka w dzisiejszych czasach!</p>
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Menu</p>
-                <p class="paragraph footer__paragraph">Strona główna</p>
-                <p class="paragraph footer__paragraph">O nas</p>
-                <p class="paragraph footer__paragraph">Projekty</p>
-                <p class="paragraph footer__paragraph">Kontakt</p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#home">Strona główna</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#o-nas">O nas</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#projekty">Projekty</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Kontakt</a></p>
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Galeria</p>
@@ -325,8 +337,8 @@
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Ostatnie artykuły</p>
-                <p class="paragraph footer__paragraph">Jak odnawialne źródła energii tworzą prąd</p>
-                <p class="paragraph footer__paragraph">Jak odnawialne źródła energii tworzą prąd</p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Jak odnawialne źródła energii tworzą prąd</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Dlaczego warto inwestować w panele słoneczne</a></p>
             </div>
         </article>
         <article class="footer__secoundArticle">

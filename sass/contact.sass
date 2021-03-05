@@ -112,6 +112,10 @@ html
         background-color: transparent
         padding: 5px 0px
         margin: 20px auto
+        outline: none
+
+    &__input:focus
+        border-bottom: 2px solid $gray
 
     &__input::-webkit-input-placeholder,
     &__input::placeholder
@@ -127,6 +131,15 @@ html
 
     &__icon
         padding-right: 20px
+
+    &__link
+        text-decoration: none
+        color: black
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
 
 .contact
     background-image: url("/image/contact-bg.png")
@@ -147,6 +160,14 @@ html
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
         margin: 40px 0px 20px
         width: 70vw
+        outline: none
+        font-size: 1.5rem
+        
+
+    &__input::-webkit-input-placeholder,
+    &__input::placeholder
+        font-family: 'Quicksand', sans-serif
+        font-weight: 400
     
     &__button
         position: relative
@@ -160,6 +181,8 @@ html
         font-weight: bold
         font-size: 1.8rem
         transition: background-color 0.5s, border 0.5s
+        cursor: pointer
+        
 
         &:hover
             background-color: $black
@@ -168,6 +191,12 @@ html
     &__headingTwo
         margin: 0px 20px
         text-align: center
+
+.field-error
+    border: 1px solid red !important
+
+.field-accept
+    border: 1px solid $green !important
 
 .footer
     padding: 50px 20px
@@ -189,6 +218,14 @@ html
         margin: 10px 10px
         font-size: 1.6rem
         font-weight: 300
+
+    &__link
+        text-decoration: none
+        color: $white
+        transition: color 0.5s
+
+        &:hover
+            color: $green
     
 
 @import "./_contactMedium"

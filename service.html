@@ -10,11 +10,10 @@
 <body>
     <nav class="navigation">
         <article class="navigation__firstArticle">
-            <img src="image/logo.png" alt="Logo Green Circle">
+            <a href="index.html"><img src="image/logo.png" alt="Logo Green Circle"></a>
         </article>
         <article class="navigation__secoundArticle">
             <a class="paragraph navigation__link" href="index.html">Home</a>
-            <a class="paragraph navigation__link" href="#o-nas">O nas</a>
             <a class="paragraph navigation__link" href="service.html">Usługi</a>
             <a class="paragraph navigation__link" href="#projekty">Projekty</a>
             <a class="paragraph navigation__link" href="contact.html">Kontakt</a>
@@ -23,7 +22,6 @@
     <nav class="navigationMobile">
         <article class="navigationMobile__firstArticle">
             <a class="paragraph navigationMobile__link" href="index.html">Home</a>
-            <a class="paragraph navigationMobile__link" href="#o-nas">O nas</a>
             <a class="paragraph navigationMobile__link" href="service.html">Usługi</a>
             <a class="paragraph navigationMobile__link" href="#projekty">Projekty</a>
             <a class="paragraph navigationMobile__link" href="contact.html">Kontakt</a>
@@ -32,7 +30,7 @@
     <div class="navigationMobile__button">
         <p>&#9758;</p>
     </div>
-    <header class="header">
+    <header id="home" class="header">
         <article class="header__firstArticle">
             <img class="header__image" src="image/circle-green-pracownicy.png" alt="Pracownicy organizacji Circle Green">
         </article>
@@ -66,7 +64,7 @@
         </article>
     </header>
 
-    <section class="statistic">
+    <section id="projekty" class="statistic">
         <article class="statistic__firstArticle">
             <div class="statistic__box statistic__box--one">
                 <h3 class="headingThree">Ponad 100 zaangażowanych osób</h3>
@@ -121,22 +119,22 @@
 
     <section class="contact">
         <h2 class="headingTwo contact__headingTwo"> <span class="spanGreenColor">Dołącz</span> do newslettera</h2>
-        <input class="contact__input" type="email" placeholder="Twój mail">
+        <input class="newsletter__input contact__input" type="email" placeholder="Twój mail">
         <button class="contact__button">Dołącz</button>
     </section>
 
     <footer class="footer">
         <article class="footer__firstArticle">
             <div class="footer__box">
-                <p class="paragraph spanFontWeight footer__paragraphMain">Green Circle</p>
+                <a href="#home"><img src="/image/logo-white.png" alt="Logo Green Circle"></a>
                 <p class="paragraph footer__paragraph">Nasz fundusz działa na rzecz ratowania przyrody i naszej planety dla przyszłych pokoleń oraz zmniejszenia szkodliwej działalności człowieka w dzisiejszych czasach!</p>
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Menu</p>
-                <p class="paragraph footer__paragraph">Strona główna</p>
-                <p class="paragraph footer__paragraph">O nas</p>
-                <p class="paragraph footer__paragraph">Projekty</p>
-                <p class="paragraph footer__paragraph">Kontakt</p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#home">Strona główna</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#o-nas">O nas</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="#projekty">Projekty</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Kontakt</a></p>
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Galeria</p>
@@ -144,8 +142,8 @@
             </div>
             <div class="footer__box">
                 <p class="paragraph spanFontWeight footer__paragraphMain">Ostatnie artykuły</p>
-                <p class="paragraph footer__paragraph">Jak odnawialne źródła energii tworzą prąd</p>
-                <p class="paragraph footer__paragraph">Jak odnawialne źródła energii tworzą prąd</p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Jak odnawialne źródła energii tworzą prąd</a></p>
+                <p class="paragraph footer__paragraph"><a class="footer__link" href="contact.html">Dlaczego warto inwestować w panele słoneczne</a></p>
             </div>
         </article>
         <article class="footer__secoundArticle">

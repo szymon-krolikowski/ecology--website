@@ -30,6 +30,7 @@
   background-color: #25c24f;
   padding: 1.25rem 2.25rem;
   margin-top: 25px;
+  cursor: pointer;
   -webkit-transition: background-color 0.5s, border 0.5s;
   transition: background-color 0.5s, border 0.5s;
 }
@@ -417,6 +418,18 @@ html {
           box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
   margin: 40px 0px 20px;
   width: 70vw;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.contact__input::-webkit-input-placeholder, .contact__input::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.contact__input::-webkit-input-placeholder, .contact__input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .contact__button {
@@ -433,6 +446,7 @@ html {
   font-size: 1.8rem;
   -webkit-transition: background-color 0.5s, border 0.5s;
   transition: background-color 0.5s, border 0.5s;
+  cursor: pointer;
 }
 
 .contact__button:hover {
@@ -443,6 +457,14 @@ html {
 .contact__headingTwo {
   margin: 0px 20px;
   text-align: center;
+}
+
+.field-error {
+  border: 1px solid red !important;
+}
+
+.field-accept {
+  border: 1px solid #25c24f !important;
 }
 
 .footer {
@@ -469,6 +491,17 @@ html {
   margin: 10px 10px;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.footer__link:hover {
+  color: #25c24f;
 }
 
 @media screen and (min-width: 760px) {

@@ -14,6 +14,8 @@ html
     scroll-behavior: smooth
     font-family: 'Quicksand', sans-serif
 
+
+
 .navigation
     height: 80px
     display: flex
@@ -493,6 +495,14 @@ html
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
         margin: 40px 0px 20px
         width: 70vw
+        font-size: 1.5rem
+        outline: none
+
+
+    &__input::-webkit-input-placeholder,
+    &__input::placeholder
+        font-family: 'Quicksand', sans-serif
+        font-weight: 400
     
     &__button
         position: relative
@@ -505,6 +515,7 @@ html
         color: $white
         font-weight: bold
         font-size: 1.8rem
+        cursor: pointer
         transition: background-color 0.5s, border 0.5s
 
         &:hover
@@ -514,6 +525,12 @@ html
     &__headingTwo
         margin: 0px 20px
         text-align: center
+
+.field-error
+    border: 1px solid red !important
+
+.field-accept
+    border: 1px solid $green !important
 
 .footer
     padding: 50px 20px

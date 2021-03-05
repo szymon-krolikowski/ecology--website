@@ -8,7 +8,11 @@ let direction;
 next.addEventListener('click', function() {
   direction = -1;
   carousel.style.justifyContent = 'flex-start';
-  slider.style.transform = 'translate(-20%)';  
+  if(document.body.offsetWidth <= 700) {
+    slider.style.transform = 'translate(-20%)';  
+  } else if(document.body.offsetWidth >= 701) {
+    slider.style.transform = 'translate(-10%)'; 
+  }
 });
 
 prev.addEventListener('click', function() {
@@ -17,12 +21,15 @@ prev.addEventListener('click', function() {
     slider.appendChild(slider.firstElementChild);
   }
   carousel.style.justifyContent = 'flex-end';    
-  slider.style.transform = 'translate(20%)';  
+  if(document.body.offsetWidth <= 700) {
+    slider.style.transform = 'translate(20%)';  
+  } else if(document.body.offsetWidth >= 701) {
+    slider.style.transform = 'translate(10%)'; 
+  }
   
 });
 
 slider.addEventListener('transitionend', function() {
-  // get the last element and append it to the front
   
   if (direction === 1) {
     slider.prepend(slider.lastElementChild);

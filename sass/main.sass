@@ -14,8 +14,6 @@ html
     scroll-behavior: smooth
     font-family: 'Quicksand', sans-serif
 
-
-
 .navigation
     height: 80px
     display: flex
@@ -27,47 +25,46 @@ html
         display: none
 
 .navigationMobile
-    width: 80vw
-    height: 100vh
     position: fixed
     top: 0
-    transform: translateX(90vw)
+    width: 80vw
+    height: 100vh
     background-color: white
+    transform: translateX(90vw)
+    box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5)
     margin-left: 10vw
     transition: transform 0.5s
     z-index: 1000
-    box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5)
     
     &__firstArticle
         display: flex
         flex-direction: column
         margin-top: 10px
         
-
     &__button
         position: fixed
         top: 20px
         right: 20px
         width: 35px
         height: 35px
-        background-color: $green
-        border-radius: 5px
-        transition: transform 0.5s
         display: flex
         justify-content: center
         align-content: center
         align-items: center
         color: $white
         font-size: 30px
+        background-color: $green
+        border-radius: 5px
+        transition: transform 0.5s
         z-index: 1000
     
     &__link
-        color: $black
         font-weight: 600
         text-decoration: none
+        color: $black
+        padding: 20px
         margin: 0 15px
         transition: color 0.5s
-        padding: 20px
 
 .navigationMobileActive
     transform: translateX(10vw)
@@ -82,8 +79,8 @@ html
 
     &__firstArticle,
     &__secoundArticle
-        margin-top: 50px
         width: 100%
+        margin-top: 50px
 
     &__subItemsBox
         margin-top: 20px
@@ -96,12 +93,12 @@ html
         color: $gray
 
     &__paragraphNumber
-        color: $green
         font-weight: bold
+        color: $green
 
     &__paragraphSubItem
-        margin: 20px 0px
         font-weight: 600
+        margin: 20px 0px
 
     &__paragraphNumber
         font-weight: 600
@@ -136,9 +133,9 @@ html
 
     &__contentBoxHeader
         position: relative
+        font-weight: 600
         padding: 10px 0px
         cursor: pointer
-        font-weight: 600
         transition: 0.5 $green
 
         &:hover
@@ -148,8 +145,8 @@ html
         position: relative
         height: 0
         overflow: hidden
-        transition: 0.5s
         overflow-y: hidden
+        transition: 0.5s
 
     &__contentBox.teamActiveBox .team__answerBox
         height: 120px
@@ -172,10 +169,10 @@ html
         position: absolute
         bottom: 0
         width: 100%
-        color: $white
-        padding: 30px 20px
-        background-color: rgba(34, 34, 34, 0.9)
         opacity: 0
+        color: $white
+        background-color: rgba(34, 34, 34, 0.9)
+        padding: 30px 20px
         transition: opacity 0.5s
 
     &__firstImageBox
@@ -183,7 +180,7 @@ html
         width: 100%
         height: 70vh
         border-radius: 5px
-        background-image: url("/image/panele-fotowoltaiczne.jpg")
+        background-image: url("../image/panele-fotowoltaiczne.jpg")
         background-position: center
         background-size: cover
         margin-bottom: 20px
@@ -196,7 +193,7 @@ html
         width: 100%
         height: 70vh
         border-radius: 5px
-        background-image: url("/image/turbiny-wiatrowe.png")
+        background-image: url("../image/turbiny-wiatrowe.png")
         background-position: center
         background-size: cover
 
@@ -204,8 +201,8 @@ html
             opacity: 1
     
     &__unorderList
-        margin: 20px 0px 0px 0px
         list-style-type: none
+        margin: 20px 0px 0px 0px
 
     &__listElement
         font-weight: 600
@@ -247,6 +244,10 @@ html
         font-size: 50px
         color: $green
 
+    &__button
+        display: inline-block
+        margin-top: 20px
+
     &__headingTwo
         position: relative
         margin-bottom: 40px
@@ -264,10 +265,6 @@ html
 
         &:hover
             color: $green
-
-    &__button
-        display: inline-block
-        margin-top: 20px
 
     &__link
         text-decoration: none
@@ -339,10 +336,10 @@ html
         flex-shrink: 0
         text-align: center
         border-radius: 5px
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
         padding: 50px 20px 20px 20px
         margin-right: 2%
         margin-left: 2%
-        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
 
     &__slider
         display: flex
@@ -383,41 +380,20 @@ html
         width: 100%
 
     &__largeImageBox
+        position: relative
         width: 100%
         height: 500px
-        border-radius: 10px
-        position: relative
         display: flex
         flex-direction: column
         justify-content: center
-        background-image: url("/image/kobieta-jezioro-gory.png")
+        background-image: url("../image/kobieta-jezioro-gory.png")
         background-position: center
         background-size: cover
+        border-radius: 10px
 
     &__largeTextBox
-        padding: 0px 30px
         position: absolute
-
-    &__headingTwo
-        margin: 40px 0px
-
-        &--white
-            color: $white
-
-    &__headingThree
-        margin: 20px 0px
-        transition: color 0.5s
-
-        &:hover
-            color: $green
-
-    &__link
-        text-decoration: none
-        color: $white
-
-    &__paragraph
-        color: $white
-        margin: 20px 0px
+        padding: 0px 30px
 
     &__container 
         width: 100%
@@ -426,28 +402,28 @@ html
         margin-top: 20px
 
     &__carousel 
+        position: relative
         width: 100%
         height: 100%
         display: flex
         justify-content: flex-start
         overflow: hidden
-        position: relative
 
     &__slider 
-        display: flex
-        height: 100%
         width: 500%
+        height: 100%
+        display: flex
         flex-shrink: 0
         transition: all 0.5s
 
     &__slide
-        flex-basis: 20%
-        flex-shrink: 0
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
+        flex-basis: 20%
+        flex-shrink: 0
         font-size: 20px
-        flex-direction: column
 
     &__image
         width: 100%
@@ -470,6 +446,27 @@ html
     &__prevButton
         margin-right: 20px
 
+    &__headingTwo
+        margin: 40px 0px
+
+        &--white
+            color: $white
+
+    &__headingThree
+        margin: 20px 0px
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
+    &__link
+        text-decoration: none
+        color: $white
+
+    &__paragraph
+        color: $white
+        margin: 20px 0px
+
     &__icon
         font-size: 30px
 
@@ -477,27 +474,26 @@ html
         text-decoration: none
 
 .contact
-    background-image: url("/image/contact-bg.png")
-    background-position: center
-    background-size: cover
     height: 50vh
     display: flex
     flex-direction: column
     justify-content: center
     align-content: center
     align-items: center
+    background-image: url("../image/contact-bg.png")
+    background-position: center
+    background-size: cover
 
     &__input
         position: relative
-        border-radius: 20px
+        width: 70vw
+        font-size: 1.5rem
         border: 1px solid $gray
+        border-radius: 20px
         padding: 10px 20px
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
         margin: 40px 0px 20px
-        width: 70vw
-        font-size: 1.5rem
         outline: none
-
 
     &__input::-webkit-input-placeholder,
     &__input::placeholder
@@ -506,25 +502,25 @@ html
     
     &__button
         position: relative
+        width: 70vw
+        font-size: 1.8rem
+        font-weight: bold
+        color: $white
         border-radius: 20px
         border: 1px solid $green
+        background-color: $green
         padding: 10px 20px
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
-        width: 70vw
-        background-color: $green
-        color: $white
-        font-weight: bold
-        font-size: 1.8rem
         cursor: pointer
         transition: background-color 0.5s, border 0.5s
 
         &:hover
-            background-color: $black
             border: 1px solid $black
+            background-color: $black
 
     &__headingTwo
-        margin: 0px 20px
         text-align: center
+        margin: 0px 20px
 
 .field-error
     border: 1px solid red !important
@@ -533,35 +529,33 @@ html
     border: 1px solid $green !important
 
 .footer
-    padding: 50px 20px
-    background-color: #3D3D3D
     color: $white
+    background-color: #3D3D3D
+    padding: 50px 20px
 
     &__secoundArticle
-        margin-top: 50px
         text-align: center
+        margin-top: 50px
 
     &__box
         margin: 20px 0px
 
     &__paragraphMain
-        margin: 20px 0px
         font-weight: bold
+        margin: 20px 0px
 
     &__paragraph
-        margin: 10px 10px
         font-size: 1.6rem
         font-weight: 300
+        margin: 10px 10px
 
     &__link
-        text-decoration: none
         color: $white
+        text-decoration: none
         transition: color 0.5s
 
         &:hover
             color: $green
-
-
 
 @import "./_medium"
 @import "./_large"

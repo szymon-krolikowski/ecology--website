@@ -1,4 +1,26 @@
 @media screen and ( min-width: 760px )
+    .navigation
+        justify-content: space-between
+        
+        &__secoundArticle
+            display: flex
+
+        &__link
+            color: $black
+            font-weight: 600
+            text-decoration: none
+            margin: 0 15px
+            transition: color 0.5s
+
+            &:hover
+                color: $green
+
+    .navigationMobile
+        display: none
+
+        &__button
+            display: none
+
     .formContact
         flex-direction: row
         
